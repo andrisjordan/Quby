@@ -10,16 +10,19 @@
     "build": "tsc",
     "dev": "set debug=* && ts-node-dev --respawn --transpileOnly ./server/index.ts --r dotenv/config",
     "prestart": "npm run build",
-    "start": "node .",
+    "startserver": "node .",
+    "start": "concurrently \"npm run startserver\" \"npm run startclient\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "prettier": "^1.19.1",
-    "ts-node": "^8.5.4"
+    "ts-node": "^8.5.4",
+    "wait-on": "^5.2.0"
   },
   "devDependencies": {
     "@types/body-parser": "^1.17.1",

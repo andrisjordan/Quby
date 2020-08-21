@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+.change_temp {
+  width: 20%;
+  background-color: white;
+  text-decoration: none;
+  border: none;
+  padding: 1rem;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.cold {
+  background-color: aqua;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.hot {
+  background-color: red;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.temp_circle{
+  background-color: white;
+  border-radius: 10rem;
+  color: #282c34;
+  width: 25%;
+  margin: 3rem;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
